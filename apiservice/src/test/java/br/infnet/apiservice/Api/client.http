@@ -1,0 +1,36 @@
+GET http://localhost:8080/produtos
+
+###
+
+GET  http://localhost:8080/produtos/200
+
+###
+
+POST http://localhost:8080/produtos
+Content-Type: application/json
+
+{
+    "nome": "Grampeador",
+    "marca": "Gramper"
+}
+###
+
+PUT http://localhost:8080/produtos/1
+Content-Type: application/json
+
+{
+    "nome": "Gramprinho",
+    "marca": "Gramper"
+}
+
+###
+
+PATCH http://localhost:8080/produtos/1
+
+###
+
+DELETE http://localhost:8080/produtos/1
+
+###
+
+GET http://localhost:8080/produtos/1
