@@ -2,7 +2,7 @@ GET http://localhost:8080/produtos
 
 ###
 
-GET  http://localhost:8080/produtos/200
+GET  http://localhost:8080/produtos/1
 
 ###
 
@@ -10,8 +10,8 @@ POST http://localhost:8080/produtos
 Content-Type: application/json
 
 {
-    "nome": "Grampeador",
-    "marca": "Gramper"
+    "nome": "Mochila",
+    "marca": "Moch"
 }
 ###
 
@@ -25,7 +25,12 @@ Content-Type: application/json
 
 ###
 
-PATCH http://localhost:8080/produtos/1
+PATCH http://localhost:8080/produtos/2
+Content-Type: application/json
+
+{
+    "marca": "Mochi"
+}
 
 ###
 
@@ -33,4 +38,4 @@ DELETE http://localhost:8080/produtos/1
 
 ###
 
-GET http://localhost:8080/produtos/1
+GET http://localhost:8080/produtos/2
